@@ -1,0 +1,16 @@
+# Project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public*
+.DS_Store
+bitbucket-pipelines.yml
+
+# PDF
+pdf/img
+venv/
+
+# File types
+*.pdf

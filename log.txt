@@ -1,0 +1,146 @@
+success delete html and css files from previous builds — 0.122 s
+success open and validate gatsby-config — 0.005 s
+success copy gatsby files — 0.025 s
+success onPreBootstrap — 0.397 s
+[32m -> wordpress__jetpack_v4 fetched : 1[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[32m -> wordpress__jetpack_jitm fetched : 0[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[32m -> wordpress__jetpack_connection fetched : 1[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "Sorry, you are not allowed to do that."[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "Sorry, you are not allowed to do that."[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "Sorry, you are not allowed to do that."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You do not have the correct user permissions to perform this action.
+			Please contact your site admin if you think this is a mistake."[0m
+[32m -> wordpress__acf_posts fetched : 0[0m
+[32m -> wordpress__acf_pages fetched : 100[0m
+[32m -> wordpress__acf_media fetched : 1[0m
+[32m -> wordpress__acf_feedback fetched : 0[0m
+[32m -> wordpress__acf_jp_pay_order fetched : 0[0m
+[32m -> wordpress__acf_jp_pay_product fetched : 0[0m
+[32m -> wordpress__acf_categories fetched : 0[0m
+[32m -> wordpress__acf_tags fetched : 0[0m
+[32m -> wordpress__acf_users fetched : 5[0m
+[32m -> wordpress__wp_api_menus_menus_items fetched : 1[0m
+[32m -> wordpress__wp_api_menus_menus_items fetched : 1[0m
+[32m -> wordpress__wp_api_menus_menus_items fetched : 1[0m
+[32m -> wordpress__wp_api_menus_menus_items fetched : 1[0m
+[32m -> wordpress__wp_api_menus_menus fetched : 4[0m
+[32m -> wordpress__wp_api_menus_menu_locations fetched : 0[0m
+[32m -> wordpress__bcn_v1 fetched : 1[0m
+[32m -> wordpress__POST fetched : 0[0m
+[32m -> wordpress__PAGE fetched : 146[0m
+[32m -> wordpress__wp_media fetched : 1[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "Sorry, you cannot view this resource."[0m
+[32m -> wordpress__wp_jp_pay_order fetched : 0[0m
+[32m -> wordpress__wp_jp_pay_product fetched : 0[0m
+[32m -> wordpress__wp_types fetched : 1[0m
+[32m -> wordpress__wp_statuses fetched : 1[0m
+[32m -> wordpress__wp_taxonomies fetched : 1[0m
+[32m -> wordpress__CATEGORY fetched : 1[0m
+[32m -> wordpress__TAG fetched : 0[0m
+[32m -> wordpress__wp_users fetched : 5[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "You are not currently logged in."[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message : "Sorry, you are not allowed to do that."[0m
+[31mThe server response was "404 Not Found"[0m
+[31mInner exception message : "No route was found matching the URL and request method"[0m
+success source and transform nodes — 20.500 s
+success building schema — 0.293 s
+success createLayouts — 0.021 s
+page skipped
+success createPages — 0.462 s
+success createPagesStatefully — 0.017 s
+success onPreExtractQueries — 0.001 s
+success update schema — 0.205 s
+wordpress__acf_pages.acf.page_links:
+ - type: array<object>
+   value: [ { page_link: [36m[Object][39m }, ... ]
+ - type: boolean
+   value: [33mfalse[39m
+wordpress__PAGE.acf.page_links:
+ - type: array<object>
+   value: [ { page_link: [36m[Object][39m }, ... ]
+ - type: boolean
+   value: [33mfalse[39m
+success extract queries from components — 0.094 s
+success run graphql queries — 0.039 s
+success write out page data — 0.005 s
+success write out redirect data — 0.001 s
+success onPostBootstrap — 0.001 s
+
+info bootstrap finished - 24.22 s
+
+success Building CSS — 3.879 s
+success Building production JavaScript bundles — 11.523 s
+props { match: { path: '/', url: '/', params: {}, isExact: true },
+  location: { pathname: '/', search: '', hash: '' },
+  history: 
+   { createHref: [Function],
+     action: 'POP',
+     location: { pathname: '/', search: '', hash: '' },
+     push: [Function],
+     replace: [Function],
+     go: [Function],
+     goBack: [Function],
+     goForward: [Function],
+     listen: [Function],
+     block: [Function] },
+  staticContext: {},
+  data: 
+   { MainMenu: 
+      { id: '8d1b3837-e377-53ea-aa25-75422f85606f',
+        slug: 'main-menu',
+        items: [Array] },
+     ContextMenu: 
+      { id: '24cdaabc-74d9-5595-bb87-91edf1f04558',
+        slug: 'context-menu',
+        items: [Array] },
+     home: { edges: [Array] },
+     pres: { edges: [Array] },
+     howto: { edges: [Array] } },
+  pathContext: {} }
+success Building static HTML for pages — 5.211 s
+info Done building in 44.836 sec

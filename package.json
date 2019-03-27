@@ -1,0 +1,56 @@
+{
+  "name": "acc-catalog",
+  "description": "The online course catalog for Austin Community College",
+  "version": "1.0.0",
+  "author": "Instructional Web",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.247",
+    "gatsby-image": "^1.0.54",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-google-tagmanager": "^1.0.19",
+    "gatsby-plugin-polyfill-io": "^1.0.3",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-plugin-sitemap": "^1.2.25",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-source-wordpress": "^2.0.87",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "glamor": "^2.20.40",
+    "gsap": "^2.0.1",
+    "html-react-parser": "^0.4.6",
+    "intersection-observer": "^0.5.0",
+    "material-components-web": "^0.35.2",
+    "object-fit-images": "^3.2.3",
+    "react-helmet": "^5.2.0",
+    "rmwc": "^1.6.4",
+    "styled-components": "^3.3.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "git pull && rm -rf public/ && gatsby build",
+    "serve": "gatsby serve --open",
+    "devdeploy": "aws s3 --region 'us-west-2' sync public/ s3://dev.catalog.austincc.edu --delete --exclude 'assets/*' --cache-control public,max-age=0",
+    "testdevdeploy": "aws s3 --region 'us-west-2' sync public/ s3://dev.catalog.austincc.edu --delete --exclude 'assets/*' --cache-control public,max-age=0 --dryrun --size-only",
+    "proddeploy": "git checkout master && aws s3 --region 'us-west-2' sync public/ s3://catalog.austincc.edu --delete --exclude 'assets/*' --cache-control public,max-age=86400",
+    "testproddeploy": "git checkout master && aws s3 --region 'us-west-2' sync public/ s3://catalog.austincc.edu --delete --exclude 'assets/*' --cache-control public,max-age=86400 --dryrun",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "git pull && gatsby develop",
+    "diff": "scripts/diff.sh",
+    "diffdeploy": "scripts/diff_deploy.sh",
+    "clearcache": "aws cloudfront create-invalidation --distribution-id E13WD0UTI9H1J5 --paths '/*'"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}
