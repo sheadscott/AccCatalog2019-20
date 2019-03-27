@@ -1,9 +1,9 @@
 import React from 'react';
 import Parser from 'html-react-parser';
-import trimpath from '../../trimpath';
 import axios from 'axios';
 
 import styled from 'styled-components';
+import trimpath from '../../trimpath';
 
 const BreadcrumbNav = styled.nav`
   ul {
@@ -24,39 +24,48 @@ const BreadcrumbNav = styled.nav`
 `;
 
 class Breadcrumbs extends React.Component {
-  state = {}
+  state = {};
+
   componentDidMount() {
     const _this = this;
-    axios.get(`https://devinstruction.austincc.edu/catalog/wp-json/bcn/v1/post/${this.props.page}`).then(response => {
-      console.log('axios', response.data);
-      _this.setState({ breadcrumbs: response.data.itemListElement.slice(1) });
-    });
+    axios
+      .get(`https://devinstruction.austincc.edu/catalog2019-20/wp-json/bcn/v1/post/${this.props.page}`)
+      .then(response => {
+        console.log('axios', response.data);
+        _this.setState({ breadcrumbs: response.data.itemListElement.slice(1) });
+      });
   }
+
   render() {
     return (
       <BreadcrumbNav>
         <ul>
-          {this.state.breadcrumbs && this.state.breadcrumbs.map((crumb, index) => {
-            if (index === 0) {
+          {this.state.breadcrumbs &&
+            this.state.breadcrumbs.map((crumb, index) => {
+              if (index === 0) {
+                return (
+                  <li key={`crumb${index}`}>
+                    <a href="/">Home</a>
+                    <span className="divider">/</span>
+                  </li>
+                );
+              }
+
+              if (index === this.state.breadcrumbs.length - 1) {
+                return (
+                  <li key={`crumb${index}`}>
+                    <span>{Parser(crumb.item.name)}</span>
+                  </li>
+                );
+              }
+
               return (
                 <li key={`crumb${index}`}>
-                  <a href="/">Home</a>
+                  <a href={trimpath(crumb.item['@id'])}>{Parser(crumb.item.name)}</a>
                   <span className="divider">/</span>
                 </li>
               );
-            }
-
-            if (index === this.state.breadcrumbs.length - 1) {
-              return <li key={`crumb${index}`}><span>{Parser(crumb.item.name)}</span></li>
-            }
-
-            return (
-              <li key={`crumb${index}`}>
-                <a href={trimpath(crumb.item['@id'])}>{Parser(crumb.item.name)}</a>
-                <span className="divider">/</span>
-              </li>
-            );
-          })}
+            })}
         </ul>
       </BreadcrumbNav>
     );

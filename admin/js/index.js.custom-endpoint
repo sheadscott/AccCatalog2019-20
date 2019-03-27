@@ -1,7 +1,7 @@
 var allPosts = [];
 
 function retrievePosts(opt) {
-  var uri = 'https://devinstruction.austincc.edu/catalog/wp-json/myplugin/v1/myposts';
+  var uri = 'https://devinstruction.austincc.edu/catalog2019-20/wp-json/myplugin/v1/myposts';
 
   $.getJSON(uri, function(data, status) {
 

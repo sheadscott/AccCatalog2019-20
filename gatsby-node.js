@@ -4,10 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const _ = require(`lodash`)
-const Promise = require(`bluebird`)
-const path = require(`path`)
-const slash = require(`slash`)
+const _ = require(`lodash`);
+const Promise = require(`bluebird`);
+const path = require(`path`);
+const slash = require(`slash`);
 const axios = require('axios');
 const https = require('https');
 const trimpath = require('./trimpath');
@@ -33,7 +33,7 @@ const trimpath = require('./trimpath');
 // Will create pages for WordPress pages (route : /{slug})
 // Will create pages for WordPress posts (route : /post/{slug})
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+  const { createPage } = boundActionCreators;
   return new Promise((resolve, reject) => {
     // The “graphql” function allows us to run arbitrary
     // queries against the local WordPress graphql schema. Think of
@@ -61,12 +61,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       `
     ).then(result => {
       if (result.errors) {
-        console.log(result.errors)
-        reject(result.errors)
+        console.log(result.errors);
+        reject(result.errors);
       }
 
       // Create Page pages.
-      const pageTemplate = path.resolve('./src/templates/page.js')
+      const pageTemplate = path.resolve('./src/templates/page.js');
       // We want to create a detailed page for each
       // page node. We'll just use the WordPress Slug for the slug.
       // The Page ID is prefixed with 'PAGE_'
@@ -85,14 +85,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             slug: edge.node.slug,
             // breadcrumbs: breads.data.itemListElement
           },
-        }
+        };
 
         // skip the home page because we already have a home page template
-        if (edge.node.link !== 'https://devinstruction.austincc.edu/catalog/') {
+        if (edge.node.link !== 'https://devinstruction.austincc.edu/catalog2019-20/') {
           // createPage(pageData);
           // console.log('create page', edge.node.slug, ' ***** ', edge.node.link);
 
-          // axios.get(`https://devinstruction.austincc.edu/catalog/wp-json/bcn/v1/post/${edge.node.wordpress_id}`).then(response => {
+          // axios.get(`https://devinstruction.austincc.edu/catalog2019-20/wp-json/bcn/v1/post/${edge.node.wordpress_id}`).then(response => {
           //   pageData.context.breadcrumbs = response.data.itemListElement;
           //   createPage(pageData);
           // })
@@ -101,10 +101,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           //     console.log('error');
           //   });
 
-          createPage(pageData)
-          resolve()
+          createPage(pageData);
+          resolve();
 
-          // https.get(`https://devinstruction.austincc.edu/catalog/wp-json/bcn/v1/post/${edge.node.wordpress_id}`, (res) => {
+          // https.get(`https://devinstruction.austincc.edu/catalog2019-20/wp-json/bcn/v1/post/${edge.node.wordpress_id}`, (res) => {
 
           //   res.setEncoding('utf8');
           //   let rawData = '';
@@ -123,12 +123,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           //   console.error(e);
           // });
         } else {
-          console.log('page skipped')
+          console.log('page skipped');
         }
-      })
+      });
 
       // resolve();
-    })
+    });
     // ==== END PAGES ====
 
     // ==== POSTS (WORDPRESS NATIVE AND ACF) ====
@@ -173,5 +173,5 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     });
     */
     // ==== END POSTS ====
-  })
-}
+  });
+};

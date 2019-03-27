@@ -41,7 +41,7 @@
     "testproddeploy": "git checkout master && aws s3 --region 'us-west-2' sync public/ s3://catalog.austincc.edu --delete --exclude 'assets/*' --cache-control public,max-age=86400 --dryrun",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "git pull && gatsby develop",
+    "dev": "git pull && gatsby develop",
     "diff": "scripts/diff.sh",
     "diffdeploy": "scripts/diff_deploy.sh",
     "clearcache": "aws cloudfront create-invalidation --distribution-id E13WD0UTI9H1J5 --paths '/*'"

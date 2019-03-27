@@ -1,15 +1,13 @@
-const axios = require('axios')
+const axios = require('axios');
 
-let pages = []
+const pages = [];
 
 const getChildren = id => {
   axios
-    .get(
-      `https://devinstruction.austincc.edu/catalog/wp-json/wp/v2/pages?parent=${id}`
-    )
+    .get(`https://devinstruction.austincc.edu/catalog2019-20/wp-json/wp/v2/pages?parent=${id}`)
     .catch(function(error) {
       // handle error
-      console.error('*** ERROR *** fetching parent: ', error)
+      console.error('*** ERROR *** fetching parent: ', error);
     })
     .then(response => {
       response.data.map(page => {
@@ -19,34 +17,30 @@ const getChildren = id => {
           title: page.title.rendered,
           link: page.link,
           children: getGrandChildren(page.id),
-        })
-      })
-    })
-}
+        });
+      });
+    });
+};
 
 const getGrandChildren = id => {
   axios
-    .get(
-      `https://devinstruction.austincc.edu/catalog/wp-json/wp/v2/pages?parent=${id}`
-    )
+    .get(`https://devinstruction.austincc.edu/catalog2019-20/wp-json/wp/v2/pages?parent=${id}`)
     .catch(function(error) {
       // handle error
-      console.error('*** ERROR *** fetching parent: ', error)
+      console.error('*** ERROR *** fetching parent: ', error);
     })
     .then(response => {
-      response.data.map(page => {
-        return {
+      response.data.map(page => ({
           order: page.menu_order,
           id: page.id,
           title: page.title.rendered,
           link: page.link,
-        }
-      })
-      console.log(pages)
-    })
-}
+        }));
+      console.log(pages);
+    });
+};
 
-console.log(getChildren(13))
+console.log(getChildren(13));
 
 // const topLevelChildren = topLevelCategories.map(cat => {})
 
@@ -87,4 +81,4 @@ const topLevelCategories = [
     id: 1369,
     slug: 'Catalog Addendum',
   },
-]
+];
