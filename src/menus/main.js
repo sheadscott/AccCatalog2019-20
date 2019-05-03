@@ -30,11 +30,11 @@ export default [
       url: '/catalog-archives/',
       object_slug: 'catalog-archives',
     },
-    {
-      title: 'Catalog Addendum',
-      url: '/catalog-addendum/',
-      object_slug: 'catalog-addendum',
-    },
+    // {
+    //   title: 'Catalog Addendum',
+    //   url: '/catalog-addendum/',
+    //   object_slug: 'catalog-addendum',
+    // },
   ],
   {
     title: 'Award Plans',
@@ -51,4 +51,4 @@ export default [
     url: '/academic-calendar',
     object_slug: 'academic-calendar',
   },
-]
+];

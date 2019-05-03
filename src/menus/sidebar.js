@@ -135,6 +135,12 @@ const collegeEntry = {
       object_slug: 'paying-for-college',
       children: [
         {
+          title: 'Managing Student Debt',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/managing-student-debt/',
+          object_slug: 'managing-student-debt',
+        },
+        {
           order: 41,
           title: 'Tuition and Payments',
           url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/tuition/',
@@ -604,11 +610,17 @@ const academicProgress = {
           object_id: 207,
           object_slug: 'continuing-education',
         },
+        {
+          title: 'Programs of Study by Campus',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/areas-of-study/programs-of-study-by-campus/',
+          object_slug: 'programs-of-study-by-campus',
+        },
       ],
     },
     {
       order: 57,
-      title: 'Award Plans & Program Maps',
+      title: 'Award Plan Types & Program Maps',
       url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/award-plans-and-program-maps/',
       object_id: 293,
       object_slug: 'award-plans-and-program-maps',
@@ -669,7 +681,7 @@ const academicProgress = {
       children: [
         {
           order: 65,
-          title: 'Career and Technical Awards',
+          title: 'Career & and Technical Awards General Education Requirements',
           url:
             'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/core-curriculum-general-education/career-and-technical-awards/',
           object_id: 229,
@@ -854,9 +866,10 @@ const awardPlans = {
       object_slug: 'award-plans',
     },
     {
-      title: 'Degrees and Certificates',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/award-plans/degrees-and-certificates-listing/',
-      object_slug: 'degrees-and-certificates-listing',
+      title: 'Degrees & Certificates Listing by Award Type',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/award-plans/degrees-and-certificates-listing-by-award-type/',
+      object_slug: 'degrees-and-certificates-listingi-by-award-type',
     },
   ],
 };
@@ -1001,6 +1014,12 @@ const studentRights = {
       object_slug: 'student-standards-of-conduct-disciplinary-process',
     },
     {
+      title: 'Student Complaints',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/student-complaints/',
+      object_slug: 'student-complaints',
+    },
+    {
       title: 'Student Complaint Process',
       url:
         'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/student-complaint-process/',
@@ -1087,6 +1106,12 @@ const studentProgressAndSupport = {
   children: [studentProgressAndServices, persistingInCollege, studentRights, studentCompletion],
 };
 
+const facultyListing = {
+  title: 'Faculty Listing',
+  url: 'https://devinstruction.austincc.edu/catalog2019-20/faculty-listing/',
+  object_slug: 'faculty-listing',
+};
+
 const archives = {
   title: 'Catalog Archives',
   url: 'https://devinstruction.austincc.edu/catalog2019-20/catalog-archives/',
@@ -1107,6 +1132,6 @@ export default [
   awardPlans,
   courseDescriptions,
   studentProgressAndSupport,
+  facultyListing,
   archives,
-  addendum,
 ];

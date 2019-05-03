@@ -63,7 +63,7 @@ module.exports = {
         perPage: 100,
         // Search and Replace Urls across WordPress content.
         // searchAndReplaceContentUrls: {
-        //   sourceUrl: 'https://devinstruction.austincc.edu/catalog',
+        //   sourceUrl: 'https://devinstruction.austincc.edu/catalog2019-20',
         //   replacementUrl: 'https://catalog.austincc.edu'
         // },
         // Set how many simultaneous requests are sent at once.
