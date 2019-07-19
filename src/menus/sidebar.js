@@ -8,7 +8,8 @@ const collegeEntry = {
     {
       order: 25,
       title: 'Determine Your Eligibility To Attend',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/determine-your-eligibility-to-attend/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/college-entry/determine-your-eligibility-to-attend/',
       object_id: 11,
       object_slug: 'determine-your-eligibility-to-attend',
       children: [
@@ -89,7 +90,8 @@ const collegeEntry = {
     {
       order: 35,
       title: 'Follow the Admission Steps',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/follow-the-admission-steps/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/college-entry/follow-the-admission-steps/',
       object_id: 156,
       object_slug: 'follow-the-admission-steps',
       children: [
@@ -130,7 +132,8 @@ const collegeEntry = {
     {
       order: 40,
       title: 'Paying for College',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/',
       object_id: 169,
       object_slug: 'paying-for-college',
       children: [
@@ -143,7 +146,8 @@ const collegeEntry = {
         {
           order: 41,
           title: 'Tuition and Payments',
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/tuition/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/tuition/',
           object_id: 172,
           object_slug: 'tuition',
         },
@@ -174,7 +178,8 @@ const collegeEntry = {
         {
           order: 46,
           title: 'Payment Plans',
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/payment-plans/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/payment-plans/',
           object_id: 182,
           object_slug: 'payment-plans',
         },
@@ -205,21 +210,24 @@ const collegeEntry = {
         {
           order: 49,
           title: 'Refunds',
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/refunds/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/refunds/',
           object_id: 188,
           object_slug: 'refunds',
         },
         {
           order: 50,
           title: 'Financial Aid',
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/financial-aid/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/financial-aid/',
           object_id: 190,
           object_slug: 'financial-aid',
         },
         {
           order: 51,
           title: "Veterans' Benefits",
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/veterans-benefits/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/college-entry/paying-for-college/veterans-benefits/',
           object_id: 193,
           object_slug: 'veterans-benefits',
         },
@@ -245,21 +253,24 @@ const collegeEntry = {
 const aboutTheCollegeSection = {
   order: 7,
   title: 'About The College',
-  url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/mission/',
+  url:
+    'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/mission/',
   object_id: 60,
   object_slug: 'about-the-college-2',
   children: [
     {
       order: 8,
       title: 'Mission and Intended Outcomes',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/mission/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/mission/',
       object_id: 62,
       object_slug: 'mission',
     },
     {
       order: 9,
       title: 'Values',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/values/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/values/',
       object_id: 65,
       object_slug: 'values',
     },
@@ -282,21 +293,24 @@ const aboutTheCollegeSection = {
     {
       order: 12,
       title: 'Accessibility',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/accessibility/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/accessibility/',
       object_id: 71,
       object_slug: 'accessibility',
     },
     {
       order: 13,
       title: 'Accreditation',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/accreditation/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/accreditation/',
       object_id: 73,
       object_slug: 'accreditation',
     },
     {
       order: 14,
       title: 'Affiliations',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/affiliations/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/affiliations/',
       object_id: 75,
       object_slug: 'affiliations',
     },
@@ -311,14 +325,16 @@ const aboutTheCollegeSection = {
     {
       order: 16,
       title: 'Locations',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/locations/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/locations/',
       object_id: 79,
       object_slug: 'locations',
     },
     {
       order: 17,
       title: 'ACC Foundation',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/acc-foundation/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/acc-foundation/',
       object_id: 84,
       object_slug: 'acc-foundation',
     },
@@ -341,7 +357,8 @@ const aboutTheCollegeSection = {
     {
       order: 20,
       title: 'Youth Programs',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/youth-programs/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/about-the-college-2/youth-programs/',
       object_id: 90,
       object_slug: 'youth-programs',
     },
@@ -375,7 +392,8 @@ const aboutTheCollegeSection = {
 const campusSafety = {
   order: 96,
   title: 'Campus Safety & Security',
-  url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/campus-safety-security/',
+  url:
+    'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/campus-safety-security/',
   object_id: 98,
   object_slug: 'campus-safety-security',
   children: [
@@ -398,7 +416,8 @@ const campusSafety = {
     {
       order: 107,
       title: 'Campus Carry',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/campus-safety-security/campus-carry/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/campus-safety-security/campus-carry/',
       object_id: 122,
       object_slug: 'campus-carry',
     },
@@ -480,7 +499,8 @@ const campusSafety = {
 const annualDisclosures = {
   title: 'Annual Disclosures',
   object_slug: 'annual-disclosures',
-  url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/',
+  url:
+    'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/',
   children: [
     {
       title: 'Annual Security Report/Clery Act',
@@ -514,7 +534,8 @@ const annualDisclosures = {
     },
     {
       title: 'Financial Aid',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/financial-aid-2/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/financial-aid-2/',
       object_slug: 'financial-aid-2',
     },
     {
@@ -543,7 +564,8 @@ const annualDisclosures = {
     },
     {
       title: 'Student Records',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/student-records/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/about-the-college/annual-disclosures/student-records/',
       object_slug: 'student-records',
     },
     {
@@ -590,7 +612,8 @@ const academicProgress = {
     {
       order: 54,
       title: 'Areas of Study',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/areas-of-study/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/areas-of-study/',
       object_id: 203,
       object_slug: 'areas-of-study',
       children: [
@@ -611,38 +634,42 @@ const academicProgress = {
           object_slug: 'continuing-education',
         },
         {
-          title: 'Programs of Study by Campus',
+          title: 'Areas of Study Programs by Campus',
           url:
-            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/areas-of-study/programs-of-study-by-campus/',
-          object_slug: 'programs-of-study-by-campus',
+            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/areas-of-study/areas-of-study-programs-by-campus/',
+          object_slug: 'areas-of-study-programs-by-campus',
         },
       ],
     },
     {
       order: 57,
       title: 'Award Plan Types & Program Maps',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/award-plans-and-program-maps/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/award-plan-types-and-program-maps/',
       object_id: 293,
-      object_slug: 'award-plans-and-program-maps',
+      object_slug: 'award-plan-types-and-program-maps',
     },
     {
       order: 59,
       title: 'Student Success Courses',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/student-success-courses/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/student-success-courses/',
       object_id: 225,
       object_slug: 'student-success-courses',
     },
     {
       order: 58,
       title: 'Course Descriptions Information',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/course-descriptions-information/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/course-descriptions-information/',
       object_id: 1189,
       object_slug: 'course-descriptions-information',
     },
     {
       order: 60,
       title: 'College Readiness',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/college-readiness/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/college-readiness/',
       object_id: 212,
       object_slug: 'college-readiness',
       children: [
@@ -675,17 +702,18 @@ const academicProgress = {
     {
       order: 64,
       title: 'Core Curriculum / General Education',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/core-curriculum-general-education/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/core-curriculum-general-education/',
       object_id: 227,
       object_slug: 'core-curriculum-general-education',
       children: [
         {
           order: 65,
-          title: 'Career & and Technical Awards General Education Requirements',
+          title: 'Career & Technical Awards General Education Requirements',
           url:
-            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/core-curriculum-general-education/career-and-technical-awards/',
+            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/core-curriculum-general-education/career-technical-awards-general-education-requirements/',
           object_id: 229,
-          object_slug: 'career-and-technical-awards',
+          object_slug: 'career-technical-awards-general-education-requirements',
         },
         {
           order: 66,
@@ -732,7 +760,8 @@ const academicProgress = {
     {
       order: 71,
       title: 'Experiential Learning',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/experiential-learning/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/experiential-learning/',
       object_id: 252,
       object_slug: 'experiential-learning',
       children: [
@@ -758,17 +787,17 @@ const academicProgress = {
       order: 74,
       title: 'Flexible Program Options',
       url:
-        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/flexible-program-options/distance-learning/',
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/flexible-program-options/distance-learning-and-alternative-education/',
       object_id: 264,
       object_slug: 'flexible-program-options',
       children: [
         {
           order: 75,
-          title: 'Distance Learning',
+          title: 'Distance Learning and Alternative Education',
           url:
-            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/flexible-program-options/distance-learning/',
+            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/flexible-program-options/distance-learning-and-alternative-education/',
           object_id: 266,
-          object_slug: 'distance-learning',
+          object_slug: 'distance-learning-and-alternative-education',
         },
         {
           order: 76,
@@ -799,7 +828,8 @@ const academicProgress = {
     {
       order: 79,
       title: 'Academic Communities',
-      url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/academic-communities/',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/academic-communities/',
       object_id: 277,
       object_slug: 'academic-communities',
       children: [
@@ -838,7 +868,8 @@ const academicProgress = {
         {
           order: 84,
           title: 'Institutes',
-          url: 'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/academic-communities/institutes/',
+          url:
+            'https://devinstruction.austincc.edu/catalog2019-20/academic-planning/academic-communities/institutes/',
           object_id: 289,
           object_slug: 'institutes',
         },
@@ -878,12 +909,27 @@ const courseDescriptions = {
   title: 'Course Descriptions',
   url: 'https://devinstruction.austincc.edu/catalog2019-20/course-descriptions/',
   object_slug: 'course-descriptions',
+  children: [
+    {
+      title: 'Cross Reference by Discipline Program',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/course-descriptions/cross-reference-by-discipline-program/',
+      object_slug: 'cross-reference-by-discipline-program',
+    },
+    {
+      title: 'Cross Reference by Course Rubric',
+      url:
+        'https://devinstruction.austincc.edu/catalog2019-20/course-descriptions/cross-reference-by-course-rubric/',
+      object_slug: 'cross-reference-by-course-rubric',
+    },
+  ],
 };
 
 const studentProgressAndServices = {
   order: 86,
   title: 'Support Services & Student Progress',
-  url: 'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/',
+  url:
+    'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/',
   object_id: 213,
   object_slug: 'support-services-student-progress',
   children: [
@@ -965,14 +1011,14 @@ const studentProgressAndServices = {
 const persistingInCollege = {
   title: 'Persisting In College',
   url:
-    'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/persisting-in-college/academic-support/',
+    'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/persisting-in-college/academic-guidance/',
   object_slug: 'persisting-in-college',
   children: [
     {
-      title: 'Academic Support',
+      title: 'Academic Guidance',
       url:
-        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/persisting-in-college/academic-support/',
-      object_slug: 'academic-support',
+        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/persisting-in-college/academic-guidance/',
+      object_slug: 'academic-guidance',
     },
     {
       title: 'Student Life',
@@ -1002,7 +1048,7 @@ const persistingInCollege = {
 };
 
 const studentRights = {
-  title: 'Student Rights and Responsibilities',
+  title: 'Students Rights and Responsibilities',
   url:
     'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/',
   object_slug: 'students-rights-responsibilities-2',
@@ -1014,22 +1060,18 @@ const studentRights = {
       object_slug: 'student-standards-of-conduct-disciplinary-process',
     },
     {
-      title: 'Student Complaints',
+      title: 'Student Complaints and Process',
       url:
-        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/student-complaints/',
-      object_slug: 'student-complaints',
+        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/student-complaints-and-process/',
+      object_slug: 'student-complaints-and-process',
     },
     {
-      title: 'Student Complaint Process',
-      url:
-        'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/student-complaint-process/',
-      object_slug: 'student-complaint-process',
-    },
-    {
-      title: 'Prohibition of Discrimination or Harassment of Students on the Basis of Disability',
+      title:
+        'Prohibition of Discrimination or Harassment of Students on the Basis of Disability',
       url:
         'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/students-rights-responsibilities-2/prohibition-of-discrimination-or-harassment-of-students-on-the-basis-of-disability/',
-      object_slug: 'prohibition-of-discrimination-or-harassment-of-students-on-the-basis-of-disability',
+      object_slug:
+        'prohibition-of-discrimination-or-harassment-of-students-on-the-basis-of-disability',
     },
     {
       title:
@@ -1101,9 +1143,15 @@ const studentCompletion = {
 
 const studentProgressAndSupport = {
   title: 'Support Services & Student Progress',
-  url: 'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/',
+  url:
+    'https://devinstruction.austincc.edu/catalog2019-20/support-services-student-progress/',
   object_slug: 'support-services-student-progress',
-  children: [studentProgressAndServices, persistingInCollege, studentRights, studentCompletion],
+  children: [
+    studentProgressAndServices,
+    persistingInCollege,
+    studentRights,
+    studentCompletion,
+  ],
 };
 
 const facultyListing = {

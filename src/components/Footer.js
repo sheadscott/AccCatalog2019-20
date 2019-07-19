@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { css } from 'glamor';
 import Parser from 'html-react-parser';
-import trimpath from '../../trimpath';
 
-import { Grid, GridCell } from "rmwc/Grid";
-import { Icon } from "rmwc/Icon";
+import { Grid, GridCell } from 'rmwc/Grid';
+import { Icon } from 'rmwc/Icon';
 
 import styled from 'styled-components';
+import trimpath from '../../trimpath';
 
 const listStyle = css({
   listStyle: 'none',
@@ -18,15 +18,15 @@ const listStyle = css({
   marginTop: '1.5rem',
   paddingLeft: '1rem',
   paddingRight: '1rem',
-  borderLeft: "1px dashed hsla(0,0%,78%,.5)",
+  borderLeft: '1px dashed hsla(0,0%,78%,.5)',
   '& a': { color: 'white', textDecoration: 'none' },
-  '& a:hover': { textDecoration: 'underline' }
+  '& a:hover': { textDecoration: 'underline' },
 });
 
 const StyledFooter = styled.footer`
-  background: radial-gradient(ellipse at center,#1a5276,#11354c);
+  background: radial-gradient(ellipse at center, #1a5276, #11354c);
   padding: 4em 0;
-  minHeight: 10rem;
+  minheight: 10rem;
   color: white;
   display: 'block';
   width: 100%;
@@ -34,10 +34,10 @@ const StyledFooter = styled.footer`
 
 const footer__logo = css({
   width: '18em',
-  fontSize: "12px",
+  fontSize: '12px',
   lineHeight: '.2em',
   marginTop: 0,
-  textAlign: 'center'
+  textAlign: 'center',
 });
 
 const FooterList = styled.ul`
@@ -92,36 +92,43 @@ const TLED = styled.svg`
   margin-top: 1rem;
 `;
 
-const Footer = (props) => (
+const Report = styled.a`
+  text-decoration: underline;
+  color: #fff;
+`;
+
+const Footer = props => (
   <StyledFooter>
     <Grid style={{ maxWidth: '960px' }}>
-
-
-
       <GridCell span="6" phone="4" tablet="8">
         <FooterList>
           {props.listItems.map((item, index) => {
             if (item.wordpress_children) {
               return (
-                <li key={`footerMenu_${item.url}_${index}`}><a href={trimpath(item.url)}>{item.title}</a>
+                <li key={`footerMenu_${item.url}_${index}`}>
+                  <a href={trimpath(item.url)}>{item.title}</a>
                   <ul className="children">
-                    {item.wordpress_children.map(child => <li key={child.url}><a href={trimpath(child.url)}>{child.title}</a></li>)}
+                    {item.wordpress_children.map(child => (
+                      <li key={child.url}>
+                        <a href={trimpath(child.url)}>{child.title}</a>
+                      </li>
+                    ))}
                   </ul>
                 </li>
               );
             }
-            return <li key={`footerMenu_${item.url}_${index}`}><a href={trimpath(item.url)}>{item.title}</a></li>
+            return (
+              <li key={`footerMenu_${item.url}_${index}`}>
+                <a href={trimpath(item.url)}>{item.title}</a>
+              </li>
+            );
           })}
         </FooterList>
       </GridCell>
 
       <GridCell span="6" phone="4" tablet="8">
-        <FooterTitle>
-          {props.text.edges[0].node.title}
-        </FooterTitle>
-        <FooterText>
-          {Parser(props.text.edges[0].node.content)}
-        </FooterText>
+        <FooterTitle>{props.text.edges[0].node.title}</FooterTitle>
+        <FooterText>{Parser(props.text.edges[0].node.content)}</FooterText>
       </GridCell>
 
       <GridCell span="6">
@@ -149,7 +156,7 @@ const Footer = (props) => (
             <path d="M383.9 43.1v14.1c-.3-.1-.5-.2-.7-.3-6.8-3.4-13.9-5.9-21.6-5.9-9.5.1-17.9 3.1-24.4 10.3-4.1 4.5-6.4 9.8-7.4 15.7-1.4 8.4-.8 16.6 2.4 24.5 5.2 13 16.7 20.2 31 20.1 8.5-.1 16.1-2.7 23.5-6.6 1.5-.8 3-1.6 4.8-2.6-2.3 5.5-4.5 10.8-6.6 16-13.9 4.9-27.9 6-41.9.7-15.8-6-25.3-17.3-28.4-34-5.1-26.9 13.4-47 31.1-52.8 8.9-3 18-3.7 27.3-1.8 3.5.7 7 1.5 10.5 2.3 0 .1.2.2.4.3zM305.2 42.9v14.3c-.6-.3-1.2-.5-1.7-.8-5.2-2.6-10.5-4.6-16.3-5.3-16-1.8-29.7 6-34.7 20.3-1.9 5.4-2.2 10.9-1.9 16.6.4 6.5 1.8 12.7 5.2 18.3 6 9.6 14.7 14.6 25.9 15.3 7 .5 13.6-1.1 19.9-3.8 3.6-1.6 7.1-3.3 10.7-5-2.1 5.1-4.2 10.3-6.3 15.6-4.6 1.7-9.4 3-14.3 3.7-12.5 1.8-24.3-.3-35.2-6.5-9.1-5.1-15.5-12.8-18.8-22.6-6.1-18.2-2.8-34.6 10.4-48.7 7.4-7.9 16.6-12.4 27.2-14.1 10.3-1.6 20.1-.1 29.9 2.7z" />
 
             {/* TLED */}
-            <g stroke="white" >
+            <g stroke="white">
               <path d="M203.4 168.2c-2.6-4.1-2.5-7.3.5-9 2.8-1.7 6.6-.8 8 1.8 1.7 3.1.3 5.7-4.4 8 .8.8 1.5 1.6 2.3 2.4.8.8 1.6 1.6 2.5 2.6.9-1.7 1.7-3.2 2.6-4.8.6.3 1.3.6 2.1 1-1 1.9-2 3.6-3.2 5.7 1.2 1.1 2.6 2.2 4 3.4-.8.7-1.4 1.1-2.1 1.6-1.1-1.2-2.2-2.3-3.3-3.5-.6.5-1.1.9-1.5 1.3-2.6 2-5.4 2.6-8.6 1.6-2.1-.7-3.5-2.2-3.9-4.4-.4-2.3.2-4.3 2.1-5.8.9-.8 1.9-1.3 2.9-1.9zm7.5 7.5c-2.1-1.9-4.1-3.7-6.2-5.7-.6.3-1.5.8-2.2 1.4-1.2 1-1.8 2.3-1.5 3.9.4 1.7 1.5 2.7 3.1 3.1 2.7.6 4.8-.6 6.8-2.7zm-4.7-8c1.1-.8 2.3-1.4 3.2-2.3 1-1 1-2.6.2-3.7-.7-1.1-2.2-1.6-3.6-1.1-1.3.4-2.1 1.6-2.1 3 0 1.6 1.1 2.7 2.3 4.1z" />
               <path d="M348.4 205.7c0-6.5 4.7-11.3 11.2-11.3 6.3 0 10.9 4.8 10.9 11.3 0 6.5-4.8 11.3-11.3 11.2-6.2 0-10.8-4.8-10.8-11.2zm2.6-.3c0 6.1 5.1 10.3 10.5 9 3.3-.8 5.4-3 6.2-6.2.9-3.5.2-6.8-2.5-9.3-2.6-2.4-5.8-2.9-9-1.5-3.7 1.5-5.1 4.5-5.2 8z" />
               <path d="M359.9 162.8v17.6h-2.3V159h2.3c4.3 5.5 8.8 11.2 13.4 17.1V159h2.4v21.5h-2c-4.5-5.9-9-11.7-13.8-17.7zM186.4 212.1v-17.2h2.3v21.5h-2c-4.5-5.8-9-11.5-13.7-17.5v17.5h-2.4v-21.5h2.3c4.4 5.6 8.9 11.2 13.5 17.2zM392 194.9h2.4v21.5h-2c-4.5-5.7-9-11.5-13.7-17.5v17.5h-2.4v-21.5h2.3c4.4 5.6 8.8 11.3 13.4 17.1v-17.1zM142 162.8v17.6h-2.3v-21.5h2.3c4.4 5.6 8.8 11.2 13.4 17.1v-17.1h2.4v21.5h-2c-4.5-5.8-9-11.5-13.8-17.6zM340.7 180.4h-2c-4.5-5.8-9.1-11.6-13.7-17.5v17.5h-2.4v-21.5h2.3c4.4 5.6 8.8 11.3 13.4 17.1v-17.1h2.4v21.5z" />
@@ -176,11 +183,23 @@ const Footer = (props) => (
         </TLED>
 
         <Address>
-          Austin Community College District<br />
-          5930 Middle Fiskville Rd.<br />
-          Austin, Texas 78752<br />
+          Austin Community College District
+          <br />
+          5930 Middle Fiskville Rd.
+          <br />
+          Austin, Texas 78752
+          <br />
           <span className="tel">512-223-4ACC (4222)</span>
         </Address>
+        <div>
+          <Report
+            href="https://fs7.formsite.com/accids/8fvbxzfirh/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Report issues and errors found in the ACC Catalog
+          </Report>
+        </div>
       </GridCell>
     </Grid>
   </StyledFooter>
@@ -210,10 +229,10 @@ export default Footer;
 //     </div>
 //     <div >
 //       <div>
-//         
+//
 //       </div>
 //       <div>
-//         
+//
 //       </div>
 //     </div>
 //   </div>
