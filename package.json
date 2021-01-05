@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Instructional Web",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gatsby": "^1.9.247",
     "gatsby-image": "^1.0.54",
     "gatsby-link": "^1.6.40",
