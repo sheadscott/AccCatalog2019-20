@@ -19,7 +19,7 @@
     "gatsby-source-wordpress": "^2.0.87",
     "gatsby-transformer-sharp": "^1.6.27",
     "glamor": "^2.20.40",
-    "gsap": "^2.0.1",
+    "gsap": "^3.6.0",
     "html-react-parser": "^0.4.6",
     "intersection-observer": "^0.5.0",
     "material-components-web": "^0.35.2",
